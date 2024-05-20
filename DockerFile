@@ -1,5 +1,5 @@
 # Utilisez l'image officielle de Python comme base
-FROM python:3.9
+FROM python:3.10
 
 # Définissez le répertoire de travail dans le conteneur
 WORKDIR /app
@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Exposez le port utilisé par Django
-EXPOSE 8090
+EXPOSE 8095
 
 # Commande pour lancer l'application Django
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8090"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8095"]
