@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8091
 
 # Commande pour lancer l'application Django
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8091"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8092"]
