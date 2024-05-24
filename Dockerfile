@@ -7,7 +7,6 @@ WORKDIR /app
 COPY . /app
 
 # Installer les dépendances
-RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Exposez le port utilisé par Django
