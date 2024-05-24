@@ -6,35 +6,4 @@ ignore=CVS,.svn,.hg,.git,__pycache__,migrations
 [MESSAGES CONTROL]
 
 # Messages à désactiver
-disable=
-
-[VARIABLES]
-
-# Nombre maximal d'arguments dans une fonction
-max-args=6
-
-# Nombre maximal de variables locales dans une fonction
-max-locals=15
-
-# Nombre maximal de déclarations de retour dans une fonction
-max-returns=6
-
-# Nombre maximal de branches dans une fonction
-max-branches=12
-
-# Nombre maximal d'instructions dans une fonction
-max-statements=50
-
-[TYPECHECK]
-
-# Vérifier les types dynamiques lors de l'analyse
-check-untyped-defs=yes
-
-# Ignorer les variables non typées lors de l'analyse
-ignore-mixin-members=yes
-
-[REPORTS]
-
-# Format des rapports générés par Pylint
-reports=yes
-output-format=text
+disable=missing-docstring
