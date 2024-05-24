@@ -1,2 +1,25 @@
+[MASTER]
+
+# Fichiers et répertoires à ignorer lors de l'analyse
+ignore=CVS,.svn,.hg,.git,__pycache__,migrations
+
 [MESSAGES CONTROL]
-disable=C0103,C0303,C0304
+
+# Messages à désactiver
+disable=
+    missing-docstring,  # Les fonctions et les classes doivent avoir des docstrings
+
+[FORMAT]
+
+# Longueur maximale d'une ligne de code
+max-line-length=120
+
+# Nombre d'espaces pour l'indentation
+indent-size=4
+
+# Style d'indentation (espaces ou tabulations)
+indent-style=space
+
+# Nombre de lignes vierges attendues entre les blocs de code
+blank-line=2
+
