@@ -3,8 +3,8 @@ version: '3'
 services:
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8093
+    command: python manage.py runserver 0.0.0.0:8094
     volumes:
       - .:/app
     ports:
-      - "8093:8093"
+      - "8094:8094"
