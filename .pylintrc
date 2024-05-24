@@ -1,10 +1,27 @@
+[MASTER]
+
+ignore=CVS,.svn,.hg,.git,__pycache__,migrations
+reports=no
+
 [MESSAGES CONTROL]
 disable=
-    too-many-instance-attributes,
-    too-many-arguments,
-    duplicate-code,
-    no-name-in-module,
-    no-member,
-    print-statement,
-    bad-whitespace,
-    missing-docstring
+    missing-docstring,  # Les fonctions et les classes doivent avoir des docstrings
+    invalid-name,       # Noms de variables, fonctions et classes non conformes aux conventions de nommage
+    bad-continuation,   # Mauvaise continuation de ligne
+    too-many-ancestors, # Trop d'ancêtres pour une classe (peut être commun dans les modèles Django)
+
+[FORMAT]
+indent-size=4
+indent-style=space
+blank-line=2
+
+[VARIABLES]
+max-locals=15
+max-returns=6
+max-branches=12
+max-statements=50
+
+[TYPECHECK]
+check-untyped-defs=yes
+ignore-mixin-members=yes
+
