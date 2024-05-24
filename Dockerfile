@@ -11,7 +11,7 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Exposez le port utilisé par Django
-EXPOSE 8094
+EXPOSE 8097
 
 # Commande pour lancer l'application Django
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8094"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8097"]
