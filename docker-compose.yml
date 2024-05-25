@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    build: .
+    image: hajer139/dashdor:main
     command: python manage.py runserver 0.0.0.0:8091
     volumes:
       - .:/app
